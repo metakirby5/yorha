@@ -1,6 +1,9 @@
 @require 'colors'
 @require 'mixins'
 
+::selection
+  background-color $c-weak
+
 body
   background-color $c-background
   grid()
@@ -14,9 +17,6 @@ a
 
 p
   margin 0 0 1rem 0
-
-del
-  color $c-weak
 
 mark
   background-color $c-strong
