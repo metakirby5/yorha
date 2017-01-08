@@ -1,15 +1,16 @@
 {
   "name": "yorha",
-  "version": "1.0.0",
-  "description": "CSS based on Nier Automata's interface design language.",
-  "repository": "https://github.com/metakirby5/yorha.git",
-  "author": "Ethan Chan <metakirby5@gmail.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/metakirby5/yorha",
+  "version": "0.0.1",
+  "description": "CSS based on Nier Automata's interface design language",
+  "main": "dist/yorha.css",
   "scripts": {
     "start": "webpack-dev-server",
     "build": "stylus --compress -u ./node_modules/nib < src/main.styl > dist/yorha.css"
   },
+  "repository": "https://github.com/metakirby5/yorha.git",
+  "author": "Ethan Chan <metakirby5@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/metakirby5/yorha",
   "dependencies": {
     "coffee-script": "^1.12.2",
     "css-loader": "^0.26.1",
