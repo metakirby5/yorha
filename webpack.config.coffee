@@ -44,10 +44,6 @@ module.exports =
 
     # Files to load
     loaders: [
-      # Pug
-      test: /\.pug$/
-      loaders: ['pug-html']
-    ,
       # Stylus
       test: /\.styl$/
       loaders: ['style', 'css', 'stylus']
@@ -56,7 +52,7 @@ module.exports =
   plugins: [
     # Generate HTML
     new HtmlWebpackPlugin
-      template: path.join SRC_PATH, 'index.pug'
+      template: 'node_modules/html5-test-page/index.html'
 
     # Hot module replacement
     new webpack.HotModuleReplacementPlugin()
