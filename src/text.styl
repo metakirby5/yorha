@@ -1,0 +1,51 @@
+@require 'colors'
+@require 'mixins'
+
+body
+  background-color $c-background
+  grid()
+  font-family helvetica, sans-serif
+  letter-spacing 0.03rem
+  font-weight lighter
+  color $c-strong
+
+a
+  color $c-strong
+
+p
+  margin 0 0 1rem 0
+
+h1
+  font-weight normal
+  text-transform uppercase
+  letter-spacing 0.5rem
+  text-shadow 0.3rem 0.3rem 0 $c-weak
+h2
+  font-weight lighter
+  border solid $c-strong
+  border-width 0.1rem 0
+  padding 0.1rem 1rem
+for n in (3..6)
+  h{n}
+    font-weight lighter
+    letter-spacing 0.1rem
+
+blockquote
+  left-stripes($c-weak)
+  padding 0.5rem
+
+cite
+  square({
+    margin-left: -1rem
+    top: 0.25em
+  })
+  padding-left 1rem
+
+hr
+  margin 1rem 0
+  border-top solid $c-strong
+  border-width 0.1rem 0 0 0
+
+mark
+  background-color $c-strong
+  color $c-weak

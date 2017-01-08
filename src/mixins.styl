@@ -1,0 +1,30 @@
+grid(cellsize = 0.3rem, color = $c-grid)
+  &
+    background-size cellsize cellsize
+    background-image linear-gradient(to right, color 1px, transparent 1px),
+                     linear-gradient(to bottom, color 1px, transparent 1px)
+
+left-stripes(color, offset = -1.5rem)
+  &
+    position relative
+  &:before
+    content ''
+    position absolute
+    top 0
+    left offset
+    bottom 0
+    height 100%
+    width 0.3rem
+    border solid color
+    border-width 0 0.2rem 0 0.6rem
+
+square(props = {})
+  &
+    position relative
+  &:before
+    content ''
+    position absolute
+    width 0.7rem
+    height 0.7rem
+    background-color $c-strong
+    {props}
