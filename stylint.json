@@ -1,0 +1,116 @@
+{
+  "blocks": {
+    "expect": "never",
+    "error": true
+  },
+  "brackets": {
+    "expect": "never",
+    "error": true
+  },
+  "colons": {
+    "expect": "never",
+    "error": true
+  },
+  "colors": {
+    "expect": "always",
+    "error": true
+  },
+  "commaSpace": {
+    "expect": "always",
+    "error": true
+  },
+  "commentSpace": {
+    "expect": "always",
+    "error": true
+  },
+  "cssLiteral": {
+    "expect": "never",
+    "error": true
+  },
+  "depthLimit": 4,
+  "duplicates": false,
+  "efficient": {
+    "expect": "always",
+    "error": true
+  },
+  "extendPref": {
+    "expect": "@extends",
+    "error": true
+  },
+  "globalDupe": false,
+  "indentPref": {
+    "expect": 2,
+    "error": true
+  },
+  "leadingZero": {
+    "expect": "always",
+    "error": true
+  },
+  "mixed": {
+    "expect": false,
+    "error": true
+  },
+  "namingConvention": {
+    "expect": "lowercase-dash",
+    "error": true
+  },
+  "namingConventionStrict": {
+    "expect": true,
+    "error": true
+  },
+  "none": {
+    "expect": "always",
+    "error": true
+  },
+  "noImportant": true,
+  "parenSpace": {
+    "expect": "never",
+    "error": true
+  },
+  "placeholders": false,
+  "prefixVarsWithDollar": {
+    "expect": "always",
+    "error": true
+  },
+  "quotePref": {
+    "expect": "single",
+    "error": true
+  },
+  "reporterOptions": {
+    "columns": ["lineData", "severity", "description", "rule"],
+    "columnSplitter": "  ",
+    "showHeaders": false,
+    "truncate": true
+  },
+  "semicolons": {
+    "expect": "never",
+    "error": true
+  },
+  "sortOrder": false,
+  "stackedProperties": {
+    "expect": "never",
+    "error": true
+  },
+  "trailingWhitespace": {
+    "expect": "never",
+    "error": true
+  },
+  "universal": false,
+  "valid": {
+    "expect": true,
+    "error": true
+  },
+  "zeroUnits": {
+    "expect": "never",
+    "error": true
+  },
+  "zIndexNormalize": {
+    "expect": 10,
+    "error": true
+  },
+  "maxErrors": false,
+  "maxWarnings": false,
+  "groupOutputByFile": true,
+  "mixins": [],
+  "exclude": ["node_modules/**/*"]
+}
