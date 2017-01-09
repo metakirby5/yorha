@@ -89,6 +89,10 @@ hr {
 }
 table {
   border-collapse: collapse;
+  font-weight: inherit;
+}
+th {
+  font-weight: normal;
 }
 td,
 th {
@@ -199,6 +203,10 @@ hr {
 }
 table {
   border-collapse: collapse;
+  font-weight: inherit;
+}
+th {
+  font-weight: normal;
 }
 td,
 th {
