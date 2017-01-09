@@ -1,6 +1,7 @@
 //- The main HTML output.
 
 meta(name='viewport' content='width=device-width, initial-scale=1')
+style .full { width: 100% }
 title YoRHa
 
 h1 YoRHa
@@ -33,12 +34,13 @@ ul
 
 h2 Headings
 
-p Headings 1 and 2 have are above.
-
-h3 Heading 3
-h4 Heading 4
-h5 Heading 5
-h6 Heading 6
+figure
+  h1 Heading 1
+  h2 Heading 2
+  h3 Heading 3
+  h4 Heading 4
+  h5 Heading 5
+  h6 Heading 6
 
 h2 Figures
 
@@ -52,6 +54,24 @@ figure
     ul
       li -
       li -
+
+h2 Forms
+
+form
+  fieldset
+    legend Android Information
+    p
+      label(for='text') Name
+      input#text.full(type='text' placeholder='YoRHa No2 Type B')
+    p
+      label(for='select') Weapons
+      select#select.full
+        option Weapon Set 1
+        option Weapon Set 2
+    p
+      label(for='textarea') Biography
+      textarea#textarea.full(rows='8' placeholder='She is a...')
+    button.full(type='submit') Submit
 
 h2 Blockquotes
 
@@ -68,18 +88,6 @@ pre
   |   P Q R S T U V W X Y Z [ \ ] ^ _
   |   ` a b c d e f g h i j k l m n o
   |   p q r s t u v w x y z { | } ~
-
-h2 Lists
-
-ol
-  li Drakengard
-  li Nier
-  li Nier Automata
-
-ul
-  li Bare Fists
-  li Virtuous Contract
-  li Virtuous Treaty
 
 h2 Tables
 
@@ -103,10 +111,14 @@ table
       td Ayaka Suwa
       td She is a prototype model that was used in order to create the superior 2B and 9S. She doesn't like to speak and often keeps to herself. The final playable character and tritagonist.
 
-h2 Forms
+h2 Lists
 
-form
-  fieldset
-    legend Sample Form
-    label(for='text') Text
-    input#text(type='text' placeholder='Placeholder')
+ol
+  li Drakengard
+  li Nier
+  li Nier Automata
+
+ul
+  li Bare Fists
+  li Virtuous Contract
+  li Virtuous Treaty
