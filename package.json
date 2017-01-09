@@ -1,6 +1,6 @@
 {
   "name": "yorha",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CSS based on Nier Automata's interface design language",
   "main": "dist/yorha.css",
   "scripts": {
