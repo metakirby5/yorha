@@ -1,0 +1,46 @@
+@require 'colors'
+@require 'mixins'
+
+fieldset
+  padding 1rem
+  border 0.1rem solid $c-weak
+
+legend
+  padding 0
+
+label
+  display block
+  margin-bottom 0.5rem
+
+box-input($color = $c-medium)
+  padding 0.5rem
+  font-size 1em
+  border none
+  outline none
+  border-radius 0
+  background-color $color
+  color inherit
+  font-family inherit
+  letter-spacing inherit
+  font-weight inherit
+
+for $type in (text password url email tel search number color date month week datetime datetime-local)
+  input[type={$type}]
+    box-input()
+textarea, select
+  box-input()
+
+button-input()
+  box-input($c-weak)
+
+for $type in (submit button reset)
+  button[type={$type}], input[type={$type}]
+    button-input()
+button, .button
+  button-input()
+
+for $placeholder in webkit-input moz ms-input
+  ::-{$placeholder}-placeholder
+    opacity 1
+    color $c-weak
+    font-weight lighter

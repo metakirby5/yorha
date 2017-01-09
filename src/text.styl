@@ -13,7 +13,7 @@ body
   color $c-strong
 
 a
-  color $c-strong
+  color inherit
 
 p
   margin 0 0 1rem 0
@@ -32,8 +32,8 @@ h2
   border solid $c-strong
   border-width 0.1rem 0
   padding 0.1rem 1rem
-for n in (3..6)
-  h{n}
+for $n in (3..6)
+  h{$n}
     font-weight lighter
     letter-spacing 0.1rem
 
