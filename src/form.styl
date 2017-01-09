@@ -1,4 +1,4 @@
-@require 'colors'
+@require 'consts'
 @require 'mixins'
 
 fieldset
@@ -30,23 +30,23 @@ for $type in (text password url email tel search number color date month week da
 textarea, select
   box-input()
 
-button-input()
-  box-input($c-weak)
+button-input($color = $c-weak)
+  box-input($color)
   cursor pointer
-  transition all 0.1s
+  transition all $transition-dur
 
   &:hover
-    background-color $c-strong
-    color $c-medium
     box-shadow 0.2em 0.2em 0.1em 0 $c-weak
 
-  &:active
-    background-color $c-medium
-    color $c-strong
-
 for $type in (submit button reset)
-  button[type={$type}], input[type={$type}]
+  input[type={$type}]
     button-input()
+    &:hover
+      background-color $c-strong
+      color $c-medium
+    &:active
+      background-color $c-medium
+      color $c-strong
 
 // These get extra styles with pseudo-elements.
 button, .button
@@ -56,19 +56,44 @@ button, .button
   position relative
   &:before
     content ''
-    transition all 0.1s
+    transition all $transition-dur
     position absolute
     top 0
     bottom 0
     left 0
     right 0
 
+  // Bar fill.
+  &:after
+    content ''
+    transition all $transition-dur
+    transition-timing-function ease-out
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    width 0
+    background-color $c-strong
+    z-index -1
+
   &:hover
+    background-color transparent
+    color $c-medium
+
     &:before
       top -0.2rem
       bottom -0.2rem
       border solid $c-strong
       border-width 0.1rem 0
+
+    &:after
+      width 100%
+
+  &:active
+    color $c-strong
+
+    &:after
+      background-color $c-medium
 
 for $placeholder in webkit-input moz ms-input
   ::-{$placeholder}-placeholder
