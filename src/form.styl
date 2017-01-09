@@ -39,7 +39,7 @@ button-input($color = $c-weak)
     box-shadow 0.2em 0.2em 0.1em 0 $c-weak
 
 for $type in (submit button reset)
-  input[type={$type}]
+  input[type={$type}]:not(:disabled)
     button-input()
     &:hover
       background-color $c-strong
@@ -48,8 +48,13 @@ for $type in (submit button reset)
       background-color $c-medium
       color $c-strong
 
+input:disabled, button:disabled, .button-disabled
+  box-input($c-medium)
+  color $c-weak
+  cursor not-allowed
+
 // These get extra styles with pseudo-elements.
-button, .button
+button:not(:disabled), .button
   button-input()
 
   // Top/bottom lines.
