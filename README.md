@@ -7,3 +7,9 @@ CSS based on Nier Automata's interface design language, written in Stylus.
 [Preview available here.](https://metakirby5.github.io/yorha/)
 
 [Check it out on NPM.](https://www.npmjs.com/package/yorha)
+
+## What's Included
+
+- CSS: [`dist/yorha.css`](dist/yorha.css)
+- Minified CSS: [`dist/yorha.min.css`](dist/yorha.min.css)
+- Source Stylus: [`src/*.styl`](src)
