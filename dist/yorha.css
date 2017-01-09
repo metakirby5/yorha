@@ -1,17 +1,6 @@
 ::selection {
   background-color: #bab5a1;
 }
-body {
-  background-color: #d1cdb7;
-  font-family: helvetica, sans-serif;
-  letter-spacing: 0.03rem;
-  font-weight: lighter;
-  color: #454138;
-}
-body {
-  background-size: 0.3rem 0.3rem;
-  background-image: linear-gradient(to right, #ccc8b1 1px, transparent 1px), linear-gradient(to bottom, #ccc8b1 1px, transparent 1px);
-}
 a {
   color: inherit;
 }
@@ -106,9 +95,6 @@ pre {
   background-color: #dcd8c0;
   padding: 1rem;
 }
-::selection {
-  background-color: #bab5a1;
-}
 body {
   background-color: #d1cdb7;
   font-family: helvetica, sans-serif;
@@ -125,6 +111,9 @@ body {
   background-image: -o-linear-gradient(left, #ccc8b1 1px, transparent 1px), -o-linear-gradient(top, #ccc8b1 1px, transparent 1px);
   background-image: -ms-linear-gradient(left, #ccc8b1 1px, transparent 1px), -ms-linear-gradient(top, #ccc8b1 1px, transparent 1px);
   background-image: linear-gradient(to right, #ccc8b1 1px, transparent 1px), linear-gradient(to bottom, #ccc8b1 1px, transparent 1px);
+}
+::selection {
+  background-color: #bab5a1;
 }
 a {
   color: inherit;
