@@ -5,7 +5,7 @@
   "main": "dist/yorha.css",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "stylus --compress -u ./node_modules/nib < src/main.styl > dist/yorha.css"
+    "build": "cd src && stylus -u ../node_modules/nib < main.styl > ../dist/yorha.css && stylus --compress -u ../node_modules/nib < main.styl > ../dist/yorha.min.css"
   },
   "repository": "https://github.com/metakirby5/yorha.git",
   "author": "Ethan Chan <metakirby5@gmail.com>",
