@@ -32,12 +32,43 @@ textarea, select
 
 button-input()
   box-input($c-weak)
+  cursor pointer
+  transition all 0.1s
+
+  &:hover
+    background-color $c-strong
+    color $c-medium
+    box-shadow 0.2em 0.2em 0.1em 0 $c-weak
+
+  &:active
+    background-color $c-medium
+    color $c-strong
 
 for $type in (submit button reset)
   button[type={$type}], input[type={$type}]
     button-input()
+
+// These get extra styles with pseudo-elements.
 button, .button
   button-input()
+
+  // Top/bottom lines.
+  position relative
+  &:before
+    content ''
+    transition all 0.1s
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+
+  &:hover
+    &:before
+      top -0.2rem
+      bottom -0.2rem
+      border solid $c-strong
+      border-width 0.1rem 0
 
 for $placeholder in webkit-input moz ms-input
   ::-{$placeholder}-placeholder
