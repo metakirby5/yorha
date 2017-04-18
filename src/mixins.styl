@@ -1,8 +1,8 @@
 grid(cellsize = 0.3rem, color = $c-grid)
   &
     background-size cellsize cellsize
-    background-image linear-gradient(to right, color 1px, transparent 1px),
-                     linear-gradient(to bottom, color 1px, transparent 1px)
+    background-image linear-gradient(to right, rgba(color, 1) 1px, rgba(color, 0) 1px),
+                     linear-gradient(to bottom, rgba(color, 1) 1px, rgba(color, 0) 1px)
 
 left-stripes(color, offset = -1.5rem)
   &
