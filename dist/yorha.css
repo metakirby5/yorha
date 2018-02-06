@@ -1,100 +1,3 @@
-::selection {
-  background-color: #bab5a1;
-}
-a {
-  color: inherit;
-}
-p {
-  margin: 0 0 1rem 0;
-}
-mark {
-  background-color: #454138;
-  color: #dcd8c0;
-}
-h1 {
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  text-shadow: 0.3rem 0.3rem 0 #bab5a1;
-}
-h2 {
-  font-weight: lighter;
-  border: solid #454138;
-  border-width: 0.1rem 0;
-  padding: 0.1rem 1rem;
-}
-h3 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-h4 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-h5 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-h6 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-blockquote {
-  padding: 0.5rem;
-}
-blockquote {
-  position: relative;
-}
-blockquote:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -1.5rem;
-  bottom: 0;
-  height: 100%;
-  width: 0.3rem;
-  border: solid #bab5a1;
-  border-width: 0 0.2rem 0 0.6rem;
-}
-cite {
-  padding-left: 2rem;
-}
-cite {
-  position: relative;
-}
-cite:before {
-  content: '';
-  position: absolute;
-  width: 0.7rem;
-  height: 0.7rem;
-  background-color: #454138;
-  margin-left: -1rem;
-  top: 0.25em;
-}
-hr {
-  margin: 1rem 0;
-  border-top: solid #bab5a1;
-  border-width: 0.1rem 0 0 0;
-}
-table {
-  border-collapse: collapse;
-  font-weight: inherit;
-}
-th {
-  font-weight: normal;
-}
-td,
-th {
-  padding: 0.5rem;
-}
-th {
-  text-align: left;
-  border-bottom: 0.1rem solid #454138;
-}
-pre {
-  background-color: #dcd8c0;
-  padding: 1rem;
-}
 body {
   background-color: #d1cdb7;
   font-family: helvetica, sans-serif;
@@ -208,44 +111,6 @@ th {
 pre {
   background-color: #dcd8c0;
   padding: 1rem;
-}
-figure {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -o-box-orient: vertical;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0;
-  margin-bottom: 1rem;
-  background-color: #dcd8c0;
-  padding: 0.5rem;
-}
-figure > :not(figcaption) {
-  margin: 0.5rem;
-}
-figure > figcaption {
-  -webkit-box-ordinal-group: -1;
-  -moz-box-ordinal-group: -1;
-  -o-box-ordinal-group: -1;
-  -ms-flex-order: -1;
-  -webkit-order: -1;
-  order: -1;
-  margin: -0.5rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  background-color: #454138;
-  color: #bab5a1;
-}
-iframe {
-  border: 0.1rem solid #bab5a1;
 }
 fieldset {
   padding: 1rem;
@@ -710,5 +575,43 @@ button:not(:disabled):active:after,
   filter: none;
   color: #bab5a1;
   font-weight: lighter;
+}
+figure {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 1rem;
+  background-color: #dcd8c0;
+  padding: 0.5rem;
+}
+figure > :not(figcaption) {
+  margin: 0.5rem;
+}
+figure > figcaption {
+  -webkit-box-ordinal-group: -1;
+  -moz-box-ordinal-group: -1;
+  -o-box-ordinal-group: -1;
+  -ms-flex-order: -1;
+  -webkit-order: -1;
+  order: -1;
+  margin: -0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #454138;
+  color: #bab5a1;
+}
+iframe {
+  border: 0.1rem solid #bab5a1;
 }
 
