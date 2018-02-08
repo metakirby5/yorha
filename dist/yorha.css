@@ -1,11 +1,5 @@
 body {
   background-color: #d1cdb7;
-  font-family: helvetica, sans-serif;
-  letter-spacing: 0.03rem;
-  font-weight: lighter;
-  color: #454138;
-}
-body {
   -webkit-background-size: 0.3rem 0.3rem;
   -moz-background-size: 0.3rem 0.3rem;
   background-size: 0.3rem 0.3rem;
@@ -14,6 +8,10 @@ body {
   background-image: -o-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -o-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
   background-image: -ms-linear-gradient(left, #ccc8b1 1px, rgba(204,200,177,0) 1px), -ms-linear-gradient(top, #ccc8b1 1px, rgba(204,200,177,0) 1px);
   background-image: linear-gradient(to right, #ccc8b1 1px, rgba(204,200,177,0) 1px), linear-gradient(to bottom, #ccc8b1 1px, rgba(204,200,177,0) 1px);
+  font-family: helvetica, sans-serif;
+  letter-spacing: 0.03rem;
+  font-weight: lighter;
+  color: #454138;
 }
 ::selection {
   background-color: #bab5a1;
@@ -40,27 +38,18 @@ h2 {
   border-width: 0.1rem 0;
   padding: 0.1rem 1rem;
 }
-h3 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-h4 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
-h5 {
-  font-weight: lighter;
-  letter-spacing: 0.1rem;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
   font-weight: lighter;
   letter-spacing: 0.1rem;
 }
 blockquote {
-  padding: 0.5rem;
-}
-blockquote {
   position: relative;
+  padding: 0.5rem;
 }
 blockquote:before {
   content: '';
@@ -74,10 +63,8 @@ blockquote:before {
   border-width: 0 0.2rem 0 0.6rem;
 }
 cite {
-  padding-left: 2rem;
-}
-cite {
   position: relative;
+  padding-left: 2rem;
 }
 cite:before {
   content: '';
@@ -124,202 +111,21 @@ label {
   display: inline-block;
   margin: 0.5rem 0;
 }
-input[type=text] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=password] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=url] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=email] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=tel] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=search] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=number] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=color] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=date] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=month] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=week] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-input[type=datetime] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
+textarea,
+select,
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=search],
+input[type=number],
+input[type=color],
+input[type=date],
+input[type=month],
+input[type=week],
+input[type=datetime],
 input[type=datetime-local] {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-}
-textarea {
   padding: 0.5rem;
   font-size: 1em;
   border: none;
@@ -336,86 +142,9 @@ textarea {
 }
 select {
   background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA0LjkgMTAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQuOSAxMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0NDQ0NDQ7fQo8L3N0eWxlPgo8dGl0bGU+YXJyb3dzPC90aXRsZT4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxLjQsNC43IDIuNSwzLjIgMy41LDQuNyAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIzLjUsNS4zIDIuNSw2LjggMS40LDUuMyAiLz4KPC9zdmc+Cg==") no-repeat right;
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #dcd8c0;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
 }
-input[type=submit]:not(:disabled) {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #bab5a1;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-input[type=submit]:not(:disabled):hover {
-  -webkit-box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-  box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-}
-input[type=submit]:not(:disabled):hover {
-  background-color: #454138;
-  color: #dcd8c0;
-}
-input[type=submit]:not(:disabled):active {
-  background-color: #dcd8c0;
-  color: #454138;
-}
-input[type=button]:not(:disabled) {
-  padding: 0.5rem;
-  font-size: 1em;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  background-color: #bab5a1;
-  color: inherit;
-  font-family: inherit;
-  letter-spacing: inherit;
-  font-weight: inherit;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  transition: all 0.2s;
-}
-input[type=button]:not(:disabled):hover {
-  -webkit-box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-  box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
-}
-input[type=button]:not(:disabled):hover {
-  background-color: #454138;
-  color: #dcd8c0;
-}
-input[type=button]:not(:disabled):active {
-  background-color: #dcd8c0;
-  color: #454138;
-}
+input[type=submit]:not(:disabled),
+input[type=button]:not(:disabled),
 input[type=reset]:not(:disabled) {
   padding: 0.5rem;
   font-size: 1em;
@@ -437,14 +166,20 @@ input[type=reset]:not(:disabled) {
   -ms-transition: all 0.2s;
   transition: all 0.2s;
 }
+input[type=submit]:not(:disabled):hover,
+input[type=button]:not(:disabled):hover,
 input[type=reset]:not(:disabled):hover {
   -webkit-box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
   box-shadow: 0.2em 0.2em 0.1em 0 #bab5a1;
 }
+input[type=submit]:not(:disabled):hover,
+input[type=button]:not(:disabled):hover,
 input[type=reset]:not(:disabled):hover {
   background-color: #454138;
   color: #dcd8c0;
 }
+input[type=submit]:not(:disabled):active,
+input[type=button]:not(:disabled):active,
 input[type=reset]:not(:disabled):active {
   background-color: #dcd8c0;
   color: #454138;
@@ -555,20 +290,8 @@ button:not(:disabled):active:after,
 .button:active:after {
   background-color: #dcd8c0;
 }
-::-webkit-input-placeholder {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  color: #bab5a1;
-  font-weight: lighter;
-}
-::-moz-placeholder {
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  color: #bab5a1;
-  font-weight: lighter;
-}
+::-webkit-input-placeholder,
+::-moz-placeholder,
 ::-ms-input-placeholder {
   opacity: 1;
   -ms-filter: none;
