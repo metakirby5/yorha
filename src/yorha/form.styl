@@ -23,11 +23,11 @@ box-input($color = $c-medium)
   letter-spacing inherit
   font-weight inherit
 
-textarea, select, \
-input[type=text], input[type=password], input[type=url], \
-input[type=email], input[type=tel], input[type=search], \
-input[type=number], input[type=color], \
-input[type=date], input[type=month], input[type=week], \
+textarea, select,
+input[type=text], input[type=password], input[type=url],
+input[type=email], input[type=tel], input[type=search],
+input[type=number], input[type=color],
+input[type=date], input[type=month], input[type=week],
 input[type=datetime], input[type=datetime-local]
     box-input()
 select
@@ -43,8 +43,8 @@ button-input($color = $c-weak)
   &:hover
     box-shadow 0.2em 0.2em 0.1em 0 $c-weak
 
-input[type=submit]:not(:disabled), \
-input[type=button]:not(:disabled), \
+input[type=submit]:not(:disabled),
+input[type=button]:not(:disabled),
 input[type=reset]:not(:disabled)
   button-input()
   &:hover
@@ -106,8 +106,8 @@ button:not(:disabled), .button
     &:after
       background-color $c-medium
 
-::-webkit-input-placeholder, \
-::-moz-placeholder, \
+::-webkit-input-placeholder,
+::-moz-placeholder,
 ::-ms-input-placeholder
   opacity 1
   color $c-weak
