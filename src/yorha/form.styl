@@ -36,7 +36,9 @@ select
 button-input($color = $c-weak)
   box-input($color)
   cursor pointer
-  transition all $transition-dur
+
+  transition-duration $transition-dur
+  transition-property color, background-color, box-shadow
 
   &:hover
     box-shadow 0.2em 0.2em 0.1em 0 $c-weak
