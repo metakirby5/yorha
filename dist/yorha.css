@@ -243,6 +243,7 @@ button:not(:disabled),
   -ms-transition-property: color, background-color, box-shadow;
   transition-property: color, background-color, box-shadow;
   position: relative;
+  z-index: 1;
 }
 button:not(:disabled):hover,
 .button:hover {
